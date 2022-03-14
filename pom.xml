@@ -52,7 +52,7 @@
     <dependency>
     <groupId>io.ratpack</groupId>
     <artifactId>ratpack-core</artifactId>
-    <version>1.4.5</version>
+    <version>1.6.0</version>
 </dependency>
 <dependency>
     <groupId>io.ratpack</groupId>
