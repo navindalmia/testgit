@@ -1,5 +1,6 @@
 package com.test.project.RatpackTestProjject;
 import ratpack.handling.Handler;
+
 import java.util.Collection;
 import java.util.HashSet;
 
@@ -26,7 +27,10 @@ public class App {
 
     private static final String ID = "id";
     private Collection<Book> booksRepo = new HashSet<>();
-
+    
+//    booksRepo.add(new Book(11,"navi","titlename"));
+    Book bk = new Book(11,"navi","titlename");
+//    booksRepo.add(bk);
     public static void main(String[] args) throws Exception {
         new App().runServer();
     }
@@ -108,6 +112,12 @@ public class App {
 		}
 		public void setId(long id) {
 			this.id = id;
+		}
+		public Book(long id, String author, String title) {
+			super();
+			this.id = id;
+			this.author = author;
+			this.title = title;
 		}
 		public String getAuthor() {
 			return author;
